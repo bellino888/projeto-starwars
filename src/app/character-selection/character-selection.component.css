@@ -1,0 +1,45 @@
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .character-card {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .character-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+  }
+  
+  

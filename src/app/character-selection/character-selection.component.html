@@ -1,0 +1,16 @@
+<div class="character-grid">
+  <div *ngFor="let character of characters" class="character-card">
+    <img
+      src="https://via.placeholder.com/150"
+      alt="{{ character.name }}"
+      class="character-image"
+    />
+    <h3>{{ character.name }}</h3>
+    <p>Planeta de origem: <span>{{ character.planet || 'Carregando...' }}</span></p>
+  </div>
+</div>
+
+<div class="pagination">
+  <button (click)="loadPage(currentPage - 1)" [disabled]="currentPage === 1">Anterior</button>
+  <button (click)="loadPage(currentPage + 1)">Próximo</button>
+</div>
